@@ -3,9 +3,9 @@ import '../css/SidebarSlider.css'; // Ensure this path is correct
 
 const SidebarSlider = () => {
   const sliderItems = [
-    { id: 1, src: "/images/md-conferences.jpg", title: "MEDDOCS PUBLISHERS - CONFERENCES" },
-    { id: 2, src: "/images/md-journals.jpg", title: "MEDDOCS PUBLISHERS - JOURNALS" },
-    { id: 3, src: "/images/ebooks-banner.jpg", title: "MEDDOCS PUBLISHERS - EBOOKS" },
+    { id: 1, src: "./public/images/md-conferences.jpg", title: "MEDDOCS PUBLISHERS - CONFERENCES" },
+    { id: 2, src: "./public/images/md-journals.jpg", title: "MEDDOCS PUBLISHERS - JOURNALS" },
+    { id: 3, src: "./public/images/ebooks-banner.jpg", title: "MEDDOCS PUBLISHERS - EBOOKS" },
   ];
 
   return (

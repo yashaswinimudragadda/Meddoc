@@ -8,7 +8,7 @@ const Footer = () => {
         
         {/* Logo and Copyright */}
         <div className="col-12 col-md-3 mb-4 align-items-center text-center">
-          <img src="/images/logo.png" alt="MedDocs Logo" className="img-fluid mb-3" style={{ maxWidth: '200px' }} />
+          <img src="./public/images/logo.png" alt="MedDocs Logo" className="img-fluid mb-3" style={{ maxWidth: '200px' }} />
           <p className="text-secondary " style={{ textAligin:'center',fontSize: 'clamp(12px, 1.2vw, 14px)' }}>
             Copyright © 2018-2019 Meddocs All Rights Reserved.
           </p>

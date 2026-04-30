@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import '../css/LogoHeader.css';
 import '../css/header-wrapper.css'
 
@@ -23,14 +23,14 @@ handleResize();
   return (
     <div  className="header-wrapper" style={{ ...styles.container, padding: isTablet ? '10px 20px' : '20px 40px' }}>
       {/* Logo */}
-      <img src="/images/logo.png" alt="MedDocs Logo" style={styles.logo} />
+      <img src="./public/images/logo.png" alt="MedDocs Logo" style={styles.logo} />
 
       {/* Right Side: Contact Info */}
       <div className="main-header-container">
         <div style={styles.contactGroup}>
         {/* WhatsApp */}
         <div style={styles.infoBox}>
-          <img src="/images/wt.png" alt="WhatsApp" style={styles.icon} />
+          <img src="./public/images/wt.png" alt="WhatsApp" style={styles.icon} />
           <div>
             <div style={styles.label}>Whatsapp Number</div>
             <div style={styles.value}>+1 (608) 718-6264</div>
@@ -39,7 +39,7 @@ handleResize();
 
         {/* Email */}
         <div style={styles.infoBox}>
-          <img src="/images/email.png" alt="Email" style={styles.icon} />
+          <img src="./public/images/email.png" alt="Email" style={styles.icon} />
           <div>
             <div style={styles.label}>EMAIL</div>
             <div style={styles.value}>support@meddocsonline.org</div>

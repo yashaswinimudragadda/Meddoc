@@ -6,7 +6,7 @@ const Conferences = () => {
         {/* Left: Image */}
         <div className="col-lg-6 mb-4 mb-lg-0 order-1 order-lg-1">
           <img 
-            src="/images/j1.png" 
+            src="./public/images/j1.png" 
             alt="Conference" 
             className="img-fluid rounded shadow" 
             style={{ width: '100%', height: 'auto' }} 

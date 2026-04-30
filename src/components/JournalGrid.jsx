@@ -3,12 +3,12 @@ import '../css/JournalGrid.css'
 
 const JournalGrid = () => {
   const journals = [
-    {icon:"/images/journals/biotechnology.png",hover:"/images/journals/biotechnology-hover.png", title: "Biotechnology", desc: "The term biotechnology is said as a technological application..." },
-    {icon:"/images/journals/clinical-nutrition.png",hover:"/images/journals/clinical-nutrition-hover.png", title: "Clinical Nutrition", desc: "Clinical nutrition simply aims to maintain healthy energy balance..." },
-    {icon:"/images/journals/addiction.png",hover:"/images/journals/addiction-hover.png", title: "Addiction and Recovery", desc: "Addiction is one of the major issues across the globe..." },
-    {icon:"/images/journals/community.png",hover:"/images/journals/community-hover.png", title: "Community Medicine", desc: "Community medicine is a discipline of medicine which deals..." },
-    {icon:"/images/journals/gastroenterology.png",hover:"/images/journals/gastroenterology-hover.png", title: "Gastroenterology", desc: "Gastroenterology majorly focuses on the digestive system..." },
-    {icon:"/images/journals/neurology.png",hover:"/images/journals/neurology-hover.png", title: "Neurology", desc: "Neurology is a medical discipline which teaches about..." }
+    {icon:"./public/images/journals/biotechnology.png",hover:"./public/images/journals/biotechnology-hover.png", title: "Biotechnology", desc: "The term biotechnology is said as a technological application..." },
+    {icon:"./public/images/journals/clinical-nutrition.png",hover:"./public/images/journals/clinical-nutrition-hover.png", title: "Clinical Nutrition", desc: "Clinical nutrition simply aims to maintain healthy energy balance..." },
+    {icon:"./public/images/journals/addiction.png",hover:"./public/images/journals/addiction-hover.png", title: "Addiction and Recovery", desc: "Addiction is one of the major issues across the globe..." },
+    {icon:"./public/images/journals/community.png",hover:"./public/images/journals/community-hover.png", title: "Community Medicine", desc: "Community medicine is a discipline of medicine which deals..." },
+    {icon:"./public/images/journals/gastroenterology.png",hover:"./public/images/journals/gastroenterology-hover.png", title: "Gastroenterology", desc: "Gastroenterology majorly focuses on the digestive system..." },
+    {icon:"./public/images/journals/neurology.png",hover:"./public/images/journals/neurology-hover.png", title: "Neurology", desc: "Neurology is a medical discipline which teaches about..." }
   ];
 
   return (
@@ -16,7 +16,7 @@ const JournalGrid = () => {
       <div className="row g-0"> {/* g-0 removes gaps between columns */}
         
         {/* Left Info Panel */}
-        <div className="col-12 col-lg-4 p-5 text-white" style={{ background:'url("/images/j.jpg") center/cover' }}>
+        <div className="col-12 col-lg-4 p-5 text-white" style={{ background:'url("./public/images/j.jpg") center/cover' }}>
           <h2 className="fw-bold mb-4" style={{fontFamily: 'Roboto Slab', fontSize: 'clamp(20px, 3vw, 32px)' }}>
             <span className="fw-normal">Open Access Peer</span> Reviewed Journals
           </h2>

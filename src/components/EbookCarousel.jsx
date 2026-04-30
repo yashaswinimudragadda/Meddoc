@@ -7,14 +7,14 @@ import SectionHeader from './SectionHeader';
 
 const EbookCarousel = () => {
   const books = [
-    { id: 1, title: "PHARMACEUTICAL CHEMISTRY", img: "/images/books/an-ebook-on-pharmaceutical-chemistry.jpg" },
-    { id: 2, title: "VASCULAR DISEASES", img: "/images/books/an-ebook-on-vascular-diseases.jpg" },
-    { id: 3, title: "NANOTECHNOLOGY", img: "/images/books/importance-applications-of-nanotechnology.jpg" },
-    { id: 4, title: "MODERN CHEMISTRY", img: "/images/books/principles-of-modern-chemistry.jpg" },
-    { id: 5, title: "BIOTECHNOLOGY", img: "/images/books/recent-trends-in-biotechnology.jpg" },
-    { id: 6, title: "MICROBIOLOGY", img: "/images/books/research-trends-of-microbiology.jpg" },
-    { id:7, title:"Alzheimer's Disease", img:"/images/books/alzheimer's-disease-and-treatment.jpg"},
-    { id:8, title:"Transfusion Medicine", img:"/images/books/transfusion-medicine.jpg"}
+    { id: 1, title: "PHARMACEUTICAL CHEMISTRY", img: "./public/images/books/an-ebook-on-pharmaceutical-chemistry.jpg" },
+    { id: 2, title: "VASCULAR DISEASES", img: "./public/images/books/an-ebook-on-vascular-diseases.jpg" },
+    { id: 3, title: "NANOTECHNOLOGY", img: "./public/images/books/importance-applications-of-nanotechnology.jpg" },
+    { id: 4, title: "MODERN CHEMISTRY", img: "./public/images/books/principles-of-modern-chemistry.jpg" },
+    { id: 5, title: "BIOTECHNOLOGY", img: "./public/images/books/recent-trends-in-biotechnology.jpg" },
+    { id: 6, title: "MICROBIOLOGY", img: "./public/images/books/research-trends-of-microbiology.jpg" },
+    { id:7, title:"Alzheimer's Disease", img:"./public/images/books/alzheimer's-disease-and-treatment.jpg"},
+    { id:8, title:"Transfusion Medicine", img:"./public/images/books/transfusion-medicine.jpg"}
   ];
 
   return (

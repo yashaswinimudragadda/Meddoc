@@ -30,7 +30,7 @@ MedDocs Publishers is a very well-dedicated in publishing various informative me
         <div className="col-lg-6 d-flex justify-content-center align-items-center">
         <div className="image-container" style={{ width: '100%', maxWidth: '500px' }}>
             <img 
-            src="/images/welcome_img.jpg" 
+            src="./public/images/welcome_img.jpg" 
             alt="About MedDocs" 
             className="img-fluid rounded shadow-sm" 
             style={{ width: '100%', height: 'auto', objectFit: 'cover' }} 
