@@ -1,0 +1,65 @@
+/* Base Floating State */
+.navbar {
+  z-index: 1000;
+  margin: 0 auto -20px auto; /* Centering it if it's not full width initially */
+  background-color: #0070c0;
+  border-radius: 8px;
+  will-change: transform; 
+  width: 95%; /* Make it look 'floating' initially */
+  max-width: 1320px; /* Standard Bootstrap container max-width */
+  transition: 
+    background-color 0.6s ease,
+    border-radius 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    margin 0.6s ease,
+    padding 0.6s ease,
+    box-shadow 0.6s ease;
+    
+  /* Prevents 'jitter' during the transition */
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* Sticky State (Triggered by GSAP) */
+.navbar.sticky-nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  /* CHANGE: Use vw to ensure it hits the screen edges */
+  width: 100vw !important; 
+  max-width: 100vw !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+/* Fix for the 'Jump' - Apply this to your HeroSection or Main wrapper */
+.content-wrapper {
+  /* This prevents the hero section from hiding under the fixed nav */
+  padding-top: 0; 
+  transition: padding-top 0.5s;
+}
+
+/* If you can detect sticky state on a parent, use this: */
+body.nav-is-sticky .content-wrapper {
+  padding-top: 80px; 
+}
+
+
+/* Target the link directly for text color and the background */
+.navbar-nav .nav-item .custom-nav-link {
+  transition: all 0.3s ease-in-out;
+  color: #ffffff !important; /* Base color */
+  padding: 10px 20px !important;
+  display: block;
+  border-radius: 4px; /* Optional: rounds the hover box corners */
+  font-size: clamp(12px,1vw,16px) !important;
+}
+
+/* The Hover State */
+/* We use the parent .nav-item to ensure the background highlights the whole 'block' */
+.navbar-nav .nav-item .custom-nav-link:hover {
+  background-color: #1c539b !important; /* Darker blue background */
+  color: #5db2e4 !important;            /* Light blue text color */
+}

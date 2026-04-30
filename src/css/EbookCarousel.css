@@ -1,0 +1,10 @@
+.book-card img {
+  width: 100%;
+  aspect-ratio: 3/4; /* Ensures all covers look uniform */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover img {
+  transform: scale(1.05); /* Subtle zoom effect on hover */
+}

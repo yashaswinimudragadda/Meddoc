@@ -1,0 +1,38 @@
+/* 1. Set the fixed height for the entire carousel container */
+#heroCarousel .carousel-inner {
+  height: 500px; /* You can change 500px to whatever height you need */
+  border-radius: 4px; /* Matches your image border-radius */
+}
+
+/* 2. Tell images to fill that container perfectly */
+#heroCarousel .carousel-item img {
+  height: 500px; /* Must match the carousel-inner height */
+  width: 100%;
+  object-fit: cover; /* This is the "pro" trick: keeps the aspect ratio while filling the space */
+  object-position: center; /* Ensures the middle of the image is the focal point */
+}
+
+/* 3. Move the indicators to the top */
+#heroCarousel .carousel-indicators {
+  top: 15px; /* Adjust this to move the dots further down or up */
+  bottom: auto;
+}
+#heroCarousel .carousel-indicators button {
+  background-color: #00264d;
+  border: 1px solid white; /* Adds a nice white outline around the blue dot */
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+/* Make the active dot fully opaque and perhaps a bit larger */
+#heroCarousel .carousel-indicators button.active {
+  background-color: #00264d;
+  opacity: 1;
+}
+.title-img{
+  background-color: rgba(57, 115, 240, 0.6);
+  padding:5px;
+  border-radius: 4px;
+}

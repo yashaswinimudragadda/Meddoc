@@ -1,0 +1,8 @@
+.footer-link {
+  transition: color 0.3s ease; /* Smooth fade effect */
+  display: block; /* Makes the entire area around the text clickable */
+}
+
+.footer-link:hover {
+  color: #007bff !important; /* Forces the blue color on hover */
+}

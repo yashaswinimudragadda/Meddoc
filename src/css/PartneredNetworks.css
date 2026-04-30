@@ -1,0 +1,10 @@
+.marquee-container {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Optional: Add a subtle hover pause */
+.marquee-container:hover {
+  animation-play-state: paused;
+}

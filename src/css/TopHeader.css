@@ -1,0 +1,11 @@
+/* Visible by default */
+.main-header-container {
+  display: flex;
+}
+
+/* Instantly hidden when screen <= 425px */
+@media (max-width: 425px) {
+  .main-header-container {
+    display: none !important;
+  }
+}

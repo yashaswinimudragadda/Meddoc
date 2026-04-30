@@ -1,0 +1,38 @@
+
+/* Base styles for the NavBar */
+.navbar {
+  position: relative;
+  z-index: 10;
+  margin-bottom: -40px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  /* Add your border radius here if you have one */
+  border-radius: 8px; 
+}
+
+
+/* Add this to your NavBar.css to give them some breathing room */
+.navbar-nav {
+  gap: 15px; /* Adjust the space between your items */
+}
+custom-nav-link {
+  transition: all 0.3s ease-in-out;
+  color: #ffffff !important;
+  /* Adjust these values to make the hover area taller or shorter */
+  padding: 40px 25px !important; 
+  display: block;
+}
+
+/* The hover effect */
+.custom-nav-link:hover {
+  background-color: rgb(28, 83, 155);
+  color: rgb(93, 178, 228) !important;
+  border-radius: 4px;
+}
+
+/* NavBar.css */
+@media (max-width: 768px) {
+  .navbar {
+    border-radius: 0 !important; /* Removes rounding on small screens */
+    margin-bottom: -20px;       /* Slightly reduced overlap for mobile */
+  }
+}

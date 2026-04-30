@@ -1,0 +1,7 @@
+/* Standardize header width to match the visual reference */
+.header-wrapper {
+  max-width: 1200px; /* Adjust this to perfectly match your target layout width */
+  margin: 0 auto;    /* Centers the entire block horizontally */
+  padding: 0 15px;   /* Ensures content doesn't touch screen edges on mobile */
+  width: 100%;       /* Ensures responsiveness */
+}

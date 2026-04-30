@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+.divider {
+  display: block;        /* Necessary to allow width/height on a span */
+  width: 100%;           /* Stretches to the width of the parent */
+  height: 3px;           /* Sets the line thickness */
+  background-color: #dee2e6; /* A clean light-gray color */
+  margin: 20px 0;        /* Adds space above and below the line */
+}
+.grid-border{
+    border-color:#77b7fa !important;
+    color:rgb(142, 202, 236);
+    font-family: 'Roboto Slab', serif;
+    font:clamp(14px,1.5vw,18px);
+    gap:12px;
+}
+.grid-border:hover{
+    background-color:rgb(199, 222, 243) !important;
+    color:black !important;
+    transition:0.3s ease-in-out;
+}   
+.icon-wrapper {
+  width: 60px; /* Adjust size to fit your icons */
+  height: 60px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+/* Hide the hover icon by default */
+.icon-hover {
+  display: none;
+}
+
+/* When the parent (.journal-card) is hovered, perform the swap */
+.journal-card:hover .icon-normal {
+  display: none;
+}
+
+.journal-card:hover .icon-hover {
+  display: block;
+}
+@media (min-width: 576px) {
+  .journal-description {
+    text-align: justify;
+  }
+}
